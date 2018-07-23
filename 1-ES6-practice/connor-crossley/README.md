@@ -22,10 +22,10 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+const had to be converted back into let within every for loop declaration, specifically for "i". This is because declaring your incrementing variable of a for loop as const will throw errors since the incremented variable is not allowed to be redefined. It does seem as though let and const both behave similarly when it comes to scope. For example, a const declared within a function will be constant for that function and any lower level declarations, but once outside of the function can be redeclared.
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+Template literals were really nice. I have to imagine I'll mostly use them whenever I have to concatenate a string in a single line, at the very least.
